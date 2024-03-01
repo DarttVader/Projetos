@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class Carrinho {
+    private ArrayList<Produto> produtos;
+
+    public Carrinho() {
+        this.produtos = new ArrayList<>();
+    }
+
+    public void adicionarProduto(Produto produto) {
+        this.produtos.add(produto);
+    }
+}
