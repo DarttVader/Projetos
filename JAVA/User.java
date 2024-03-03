@@ -2,13 +2,20 @@ import java.util.ArrayList;
 
 public class User {
     private Double pesoTotal;
+    @SuppressWarnings("unused")
     private String nome;
+    @SuppressWarnings("unused")
     private String email;
+    @SuppressWarnings("unused")
     private Integer idade;
+    @SuppressWarnings("unused")
     private Carrinho carrinho;
+    @SuppressWarnings("unused")
     private Double precoBruto;
+    @SuppressWarnings("unused")
     private Double taxa;
     private Double precoTotal;
+    @SuppressWarnings("unused")
     private ArrayList<Produto> listaProd;
 
     public User(String nome, String email, Integer idade) {
