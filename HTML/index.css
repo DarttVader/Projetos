@@ -1,6 +1,24 @@
+@font-face {
+    font-family: "Social Media";
+    src: url("fonts/Social\ Media\ Circled.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contatos a {
+    font-family: "Social Media", Times, serif;
+    font-size: 3em;
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
 body {
-    background-color: black;
+    background-color: purple;
 }
-a {
-    color: red;
-}
+
