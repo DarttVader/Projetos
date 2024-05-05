@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula/WEB?Js</title>
+    <title>Atividades JavaScript</title>
 </head>
 <body>
-    
+
+    <script>
+
+        //      IF, ELSE IF E ELSE
+
+let numero = 10;
+
+if (numero > 0) {
+    console.log("O número é positivo");
+} else if (numero < 0) {
+    console.log("O número é negativo");
+} else {
+    console.log("O número é zero");
+}
+
+//      A estrutura if é usada para verificar se algo é verdadeiro
+//  e então fazer algo se for. O else if permite verificar mais 
+//  de uma coisa após a primeira. Se nenhuma das condições 
+//  anteriores for atendida, a parte else do código será
+//  executada.
+
+let idade = 20;
+
+if (idade >= 18) {
+    console.log("O usuário é maior de idade");
+} else {
+    console.log("O usuário é menor de idade");
+}
+
+//-------------------------------------------------------------------------------\\
+//      SWITCH CASE
+//      Exemplo 1:
+
+let dia = 3;
+let nomeDia;
+
+switch (dia) {
+    case 1:
+        nomeDia = "Segunda-feira";
+        break;
+    case 2:
+        nomeDia = "Terça-feira";
+        break;
+    case 3:
+        nomeDia = "Quarta-feira";
+        break;
+    default:
+        nomeDia = "Dia inválido";
+}
+console.log("Hoje é " + nomeDia);
+
+//      Exemplo 2:
+
+let operacao = 'divisao';
+let resultado;
+
+switch (operacao) {
+    case 'soma':
+        resultado = 10 + 5;
+        break;
+    case 'subtracao':
+        resultado = 10 - 5;
+        break;
+    case 'multiplicacao':
+        resultado = 10 * 5;
+        break;
+    case 'divisao':
+        resultado = 10 / 5;
+        break;
+    default:
+        resultado = "Operação inválida";
+}
+
+console.log("O resultado da operação é: " + resultado);
+
+
+//      Quando você tem um monte de coisas diferentes para verificar,
+//  a estrutura do switch é útil. Ele verifica uma expressão, compara
+//  o resultado com diferentes opções e executa o código que acompanha 
+//  cada opção.
+//-------------------------------------------------------------------------------\\
+
+//      FOR LOOP
+//      Exemplo 1:
+
+let frutas = ['maçã', 'banana', 'laranja', 'morango'];
+
+for (let i = 0; i < frutas.length; i++) {
+    console.log("Eu gosto de " + frutas[i]);
+}
+
+//      Exemplo 2:
+
+for (let i = 0; i <= 10; i += 2) {
+    console.log(i);
+}
+
+//      For é usado para percorrer uma lista de itens conhecidos. O loop tem três
+//  partes: você o inicia (inicialização), decide quando interrompê-lo (condição
+//  de continuação) e faz algo após cada etapa (expressão final).
+//-------------------------------------------------------------------------------\\
+
+//      WHILE LOOP
+
+let contador = 1;
+
+while (contador <= 5) {
+    console.log(contador);
+    contador++;
+}
+
+//      Outro exemplo de While loop:
+
+let caras = 0;
+
+while (caras < 3) {
+    let resultado = Math.random();
+    if (resultado < 0.5) {
+        console.log("Cara");
+        caras++;
+    } else {
+        console.log("Coroa");
+        caras = 0; 
+    }
+}
+
+//      While é usado quando você não sabe antecipadamente quantas
+//  vezes uma ação deve ser repetida, mas sabe a condição que deve
+//  ser atendida para terminar. Ele executa um bloco de código 
+//  enquanto a condição especificada for verdadeira.
+
+    </script>
 </body>
 </html>
