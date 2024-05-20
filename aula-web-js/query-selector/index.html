@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinco lugares que você gostaria de viajar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .image-list {
+            display: flex; 
+            flex-wrap: nowrap; 
+            justify-content: space-between; 
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-list img {
+            max-width: 200px;
+            height: auto;
+        }
+        .container img {
+            width: 200px; 
+            height: 150px; 
+            object-fit: cover;
+        }
+        .quadrado-divider {
+            width: 1349px;
+            margin-left: 0px;
+            margin-top: 17px;
+            height: 30px;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cinco lugares que você gostaria de viajar</h1>
+    </header>
+    <div class="container">
+        <h2>1. Paris, França</h2>
+        <p>Paris, a cidade luz, é famosa por sua arquitetura, gastronomia e cultura. A Torre Eiffel, o Louvre e a Catedral de Notre-Dame são apenas alguns dos pontos turísticos imperdíveis.</p>
+        <img src="../imagens/paris.jpg" alt="Paris, França">
+        <h2>2. Tóquio, Japão</h2>
+        <p>Tóquio é uma metrópole vibrante que combina tradição e modernidade. Dos templos antigos aos arranha-céus futuristas, esta cidade tem algo para todos os gostos.</p>
+        <img src="../imagens/toquio.jpg" alt="Tóquio, Japão">
+        <h2>3. Nova Iorque, Estados Unidos</h2>
+        <p>A cidade que nunca dorme oferece uma mistura única de cultura, arte, compras e entretenimento. De Times Square à Estátua da Liberdade, Nova Iorque é uma experiência inesquecível.</p>
+        <img src="../imagens/novaiorque.jpg" alt="Nova Iorque, Estados Unidos">
+        <h2>4. Rio de Janeiro, Brasil</h2>
+        <p>O Rio de Janeiro encanta com suas praias deslumbrantes, montanhas imponentes e a energia contagiante de sua cultura. O Cristo Redentor e o Pão de Açúcar são ícones mundialmente conhecidos.</p>
+        <img src="../imagens/rio.webp" alt="Rio de Janeiro, Brasil">
+        <h2>5. Sydney, Austrália</h2>
+        <p>Sydney é uma cidade cosmopolita conhecida por sua icônica Opera House, suas praias de areias douradas e sua atmosfera descontraída. É o destino perfeito para quem ama sol e mar.</p>
+        <img src="../imagens/sydney.jpg" alt="Sydney, Austrália">
+    </div>
+        <div class="quadrado-divider"></div>
+        <div class="image-list">
+            <img src="../imagens/paris.jpg" alt="Paris, França">
+            <img src="../imagens/toquio.jpg" alt="Tóquio, Japão">
+            <img src="../imagens/novaiorque.jpg" alt="Nova Iorque, Estados Unidos">
+            <img src="../imagens/rio.webp" alt="Rio de Janeiro, Brasil">
+            <img src="../imagens/sydney.jpg" alt="Sydney, Austrália">
+        </div>
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.image-list img');
+        images.forEach(image => console.log(image.src));
+
+        const paragraph = document.createElement('p');
+        paragraph.textContent = "Estes destinos incríveis oferecem experiências únicas que ficarão para sempre em suas memórias. Comece a planejar sua próxima aventura!";
+        document.querySelector('.container').appendChild(paragraph);
+    </script>
+</body>
+</html>
